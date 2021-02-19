@@ -4,23 +4,20 @@
     "password": "crHrIHTD_RKqNNwE1g5K9DCLLE4cjYnV",
     "database": "nibmdmco",
     "host": "ziggy.db.elephantsql.com",
-    "dialect": "postgres",
-    "operatorsAliases": false
+    "dialect": "postgres"
   },
   "test": {
     "username": "nibmdmco",
     "password": "crHrIHTD_RKqNNwE1g5K9DCLLE4cjYnV",
     "database": "nibmdmco",
     "host": "ziggy.db.elephantsql.com",
-    "dialect": "postgres",
-    "operatorsAliases": false
+    "dialect": "postgres"
   },
   "production": {
     "username": "nibmdmco",
     "password": "crHrIHTD_RKqNNwE1g5K9DCLLE4cjYnV",
     "database": "nibmdmco",
     "host": "ziggy.db.elephantsql.com",
-    "dialect": "postgres",
-    "operatorsAliases": false
+    "dialect": "postgres"
   }
 }
