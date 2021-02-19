@@ -1,4 +1,5 @@
 const express = require('express')
+const PORT = process.env.port || 8080;
 const app = express()
 global.models = require('./models')
 const bodyParser = require('body-parser')
@@ -15,8 +16,8 @@ app.use('/account', accountRouter)
 
 
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
 
-    console.log("Server started on port 3000 at: " +Date())
+    console.log(`Server started on port ${PORT} at: ` +Date())
 
 })
