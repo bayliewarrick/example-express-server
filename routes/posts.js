@@ -32,6 +32,7 @@ router.post('/delete-post/:postId',(req, res) => {
     })
 })
 
+/* route parameter example, postId would be a parameter */
 router.get('/:postId',(req,res) => {
     const postId = parseInt(req.params.postId) 
     models.Post.findByPk(postId).then(post => res.json(post))
