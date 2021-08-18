@@ -16,3 +16,22 @@ describe('/GET Posts', () => {
         })
     })
 });
+
+describe('ADD a post', () => {
+    it('Test should post a new test and then check the response body.', (done) => {
+        chai.request(`http://localhost:1234`)
+        .post('/posts/add-post')
+        .set('Content-Type', 'application/json')
+        .send({
+            "title": "abc",
+            "body": "def",
+            "category": "ghi"
+        })
+        .end(function (err, res) {
+            res.should.have.status(200);
+            res.body.should.be.an('object');
+            res.body.should.have.property('title');
+            done();
+        })
+    })
+});

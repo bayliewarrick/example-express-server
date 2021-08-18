@@ -3,8 +3,7 @@ require('dotenv').config()
 const PORT = process.env.port || 1234;
 const app = express()
 global.models = require('./models')
-const bodyParser = require('body-parser')
-app.use(bodyParser.urlencoded({extended: false}))
+app.use(require('body-parser').json())
 
 const indexRouter = require('./routes/index')
 const postsRouter = require('./routes/posts')
