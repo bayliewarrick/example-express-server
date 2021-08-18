@@ -43,7 +43,6 @@ console.log(last_name)
 console.log(first + ', ' + zip)
 
 */
-
 app.listen(PORT, () => {
 
     console.log(`Server started on port: ${PORT} \n Started at: ` +Date());
