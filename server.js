@@ -13,7 +13,7 @@ const accountRouter = require('./routes/account')
 app.use('/', indexRouter)
 app.use('/posts', postsRouter)
 app.use('/account', accountRouter)
-
+/*
 const user = {
     first_name: 'abc',
     last_name: 'def',
@@ -42,7 +42,7 @@ console.log(first_name)
 console.log(last_name)
 console.log(first + ', ' + zip)
 
-
+*/
 
 app.listen(PORT, () => {
 
